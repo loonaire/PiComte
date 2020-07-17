@@ -71,3 +71,10 @@ Thumbs.db
 *.dll
 *.exe
 
+
+# build dir
+build/*
+
+#QtCreator Config
+
+CMakeLists.txt.user
