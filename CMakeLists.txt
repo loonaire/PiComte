@@ -41,14 +41,18 @@ set(RESSOURCES_FILES resources/resources.qrc)
 
 set(EXECUTABLE_NAME PiComte)
 
-set(SRC_FILES
-  src/main.cpp
-  src/mainwindow.cpp
-)
+#set(SRC_FILES
+#  src/main.cpp
+#  src/mainwindow.cpp
+#)
 
-set(HEADER_FILES
-  src/mainwindow.h
-)
+#set(HEADER_FILES
+#  src/mainwindow.h
+#)
+
+file(GLOB SRC_FILES src/*.cpp)
+
+file(GLOB HEADER_FILES src/*.h)
 
 
 #---------------------------------------------------------------------
