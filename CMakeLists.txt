@@ -12,7 +12,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
@@ -41,19 +40,8 @@ set(RESSOURCES_FILES resources/resources.qrc)
 
 set(EXECUTABLE_NAME PiComte)
 
-#set(SRC_FILES
-#  src/main.cpp
-#  src/mainwindow.cpp
-#)
-
-#set(HEADER_FILES
-#  src/mainwindow.h
-#)
-
 file(GLOB SRC_FILES src/*.cpp)
-
 file(GLOB HEADER_FILES src/*.h)
-
 
 #---------------------------------------------------------------------
 # Custom target for make target debug, release, if qtcreator is not used
@@ -73,10 +61,6 @@ ADD_CUSTOM_TARGET(releasewithdebug
   COMMENT "Creating the executable in the release with debug information mode.")
 
 
-
-
-
-
 #compilation
 
 if(ANDROID) #Android semble un cas a part...  
@@ -86,7 +70,6 @@ if(ANDROID) #Android semble un cas a part...
     ${HEADER_FILES}
     ${TS_FILES}
   )
-
 else()
 #Pas sur que tout soit fonctionnel mais a test 
   if(WIN32)
@@ -113,9 +96,8 @@ else()
     ${HEADER_FILES}
     ${TS_FILES}
     ${RESSOURCES_FILES}
-
-
-) 
+    )
+ 
 endif()
 
 target_link_libraries(PiComte PRIVATE Qt5::Widgets)
