@@ -9,7 +9,7 @@ Voici une image d'exemple:
 
 ## Utilisation
 
-*** requiert visual c++ 2019 x64 d'installer, disponible ici: *** [lien](https://support.microsoft.com/fr-fr/help/2977003/the-latest-supported-visual-c-downloads) 
+***Requiert visual c++ 2019 x64 d'installer, disponible ici:*** [lien](https://support.microsoft.com/fr-fr/help/2977003/the-latest-supported-visual-c-downloads) 
 
 [lien direct](https://aka.ms/vs/16/release/vc_redist.x64.exe)
 
