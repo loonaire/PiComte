@@ -14,7 +14,7 @@ Voici une image d'exemple:
 [lien direct](https://aka.ms/vs/16/release/vc_redist.x64.exe)
 
 
-1. Télécharger la dernière release ici: (insérer le lien de la build release ici)
+1. Télécharger la dernière release ici: [lien](https://github.com/loonaire/PiComte/releases)
 
 2. Décompresser l'archive où vous le voulez
 
